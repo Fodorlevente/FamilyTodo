@@ -6,6 +6,7 @@ A megvalósítás több részből áll, React alapú frontend technológiát alk
 
 
 Developers:
+
 [Fodor Levente] 
 
 [Bohnert Márton] 
