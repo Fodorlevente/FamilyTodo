@@ -1,9 +1,13 @@
 # Family Todo 
 
+User Interface plan:
+![Image of UI](./img/UI.png)
 
 Tervünk egy a legmodernebb technológiákra épülő webes családi TODO alkalmazás lefejlesztése MVC architektúrában.
 A megvalósítás több részből áll, React alapú frontend technológiát alkalmazunk a minél letisztultabb és felhasználóbarátabb reszponzív megjelenítés érdekében, maximalizálva a felhasználói élményt! A backenden történő üzleti logika egy Node.js szerveren kerül megvalósításra, hogy elkerüljük a különböző nyelvek közötti konverziós hibákat, és mind a front-end, mind a back-end JavaScript nyelven legyen interpretálva. A tárolt adatokat egy noSQL adatbázisban tárolja majd a rendszer (MongoDB, CouchDB, FireBaseDB stb..). Az elkészült megoldás terveink szerint Docker konténerben fog futni. A teljes fejlesztési ciklus visszakövethető és monitorozható lesz GitHub verziókezelő rendszerben, ahol minden egyes pull-requestnél code-review lesz, és a teljes csapatnak 'approve'-olnia kell a bejövő változtatást. Nem megfelelő kód esetén a pull-request 'needs-work' státuszba kerül. Ha bármilyen hiba keletkezik, arról készül egy 'Bugfix' branch, az adott hiba elhárítására. A csapatban meglesznek a különböző feladatkörök, van aki a front-end 'User-experience'-ért felelős, van aki az adatbázisért felelős, mindenkinek lesz egy bizonyos szerepköre, és a különböző feladatokat lehet párhuzamosítani, így nem blokkolják be egymást a fejlesztés időtartalma alatt.
 
+Infrastructure plan:
+![Image of Infrastructure](./img/Infrastructure.png)
 
 Developers:
 
