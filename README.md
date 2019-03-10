@@ -3,8 +3,19 @@
 User Interface plan:
 ![Image of UI](./img/UI.png)
 
-Tervünk egy a legmodernebb technológiákra épülő webes családi TODO alkalmazás lefejlesztése MVC architektúrában.
-A megvalósítás több részből áll, React alapú frontend technológiát alkalmazunk a minél letisztultabb és felhasználóbarátabb reszponzív megjelenítés érdekében, maximalizálva a felhasználói élményt! A backenden történő üzleti logika egy Node.js szerveren kerül megvalósításra, hogy elkerüljük a különböző nyelvek közötti konverziós hibákat, és mind a front-end, mind a back-end JavaScript nyelven legyen interpretálva. A tárolt adatokat egy noSQL adatbázisban tárolja majd a rendszer (MongoDB, CouchDB, FireBaseDB stb..). Az elkészült megoldás terveink szerint Docker konténerben fog futni. A teljes fejlesztési ciklus visszakövethető és monitorozható lesz GitHub verziókezelő rendszerben, ahol minden egyes pull-requestnél code-review lesz, és a teljes csapatnak 'approve'-olnia kell a bejövő változtatást. Nem megfelelő kód esetén a pull-request 'needs-work' státuszba kerül. Ha bármilyen hiba keletkezik, arról készül egy 'Bugfix' branch, az adott hiba elhárítására. A csapatban meglesznek a különböző feladatkörök, van aki a front-end 'User-experience'-ért felelős, van aki az adatbázisért felelős, mindenkinek lesz egy bizonyos szerepköre, és a különböző feladatokat lehet párhuzamosítani, így nem blokkolják be egymást a fejlesztés időtartalma alatt.
+
+Family todo web-based fullstack application written in JavaScript. The Frontend was built in React.js and Bootstrap for the responsive and clean design for increase the user experience. The Server is a Node.js server, written in JavaScritpt, and uses express.js. To store datas, this application use MongoDB, which one is a NoSql database. Our plan is create multiple docker images for every services like frontend, backend, and the database. At the UI the user can see multiple cards or tasks, which contains the title, description and the place or time of things to do. There are multiple card colors (red, grey, blue, yellow).
+
+Grey:
+  * Can be done at any time
+Green:
+  * Low level task
+Blue:
+  * Higher than low level and less difficult than medium level
+Yellow:
+  * Medium leveltask
+Red:
+  * Very important task
 
 Infrastructure plan:
 ![Image of Infrastructure](./img/Infrastructure.png)
