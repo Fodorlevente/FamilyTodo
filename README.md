@@ -6,16 +6,13 @@ User Interface plan:
 
 Family todo web-based fullstack application written in JavaScript. The Frontend was built in React.js and Bootstrap for the responsive and clean design for increase the user experience. The Server is a Node.js server, written in JavaScritpt, and uses express.js. To store datas, this application use MongoDB, which one is a NoSql database. Our plan is create multiple docker images for every services like frontend, backend, and the database. At the UI the user can see multiple cards or tasks, which contains the title, description and the place or time of things to do. There are multiple card colors (red, grey, blue, yellow).
 
-Grey:
-  * Can be done at any time
-Green:
-  * Low level task
-Blue:
-  * Higher than low level and less difficult than medium level
-Yellow:
-  * Medium leveltask
-Red:
-  * Very important task
+| Color | Description |
+| ------ | ------ |
+| Grey | Can be done at any time |
+| Green | Low level task |
+| Blue | Higher than low level and less difficult than medium level |
+| Yellow | Medium level task |
+| Red | Very important task |
 
 Infrastructure plan:
 ![Image of Infrastructure](./img/Infrastructure.png)
