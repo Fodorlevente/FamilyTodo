@@ -11,14 +11,14 @@ class App extends Component {
 
     this.state = {
       todos: [
-        {id: 0, text: "Learn Js"},
-        {id: 1, text: 'bLAbLABLDSA'}
+        {id: 0, text: "Learn Js"}
       ],
       nextId: 3 //like a pointer
     }
 
     this.addTodo = this.addTodo.bind(this);
     this.removeTodo = this.removeTodo.bind(this);
+    this.finishedTodo = this.finishedTodo.bind(this);
   }
 
   addTodo(todoText){
@@ -36,6 +36,10 @@ class App extends Component {
     })
   }
 
+  finishedTodo(id){
+    console.log(id);
+  }
+
   render() {
     return (
       <div className="App">
@@ -45,8 +49,9 @@ class App extends Component {
           <ul>
             {
               this.state.todos.map((todo)=>{
-                return <TodoItem todo={todo} key={todo.id} id={todo.id} removeTodo={this.removeTodo} />
-              })
+                return <TodoItem todo={todo} key={todo.id} id={todo.id} removeTodo={this.removeTodo}  finishedTodo={this.finishedTodo} />
+              }
+              )
             }
           </ul>
         </div>
