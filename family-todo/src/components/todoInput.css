@@ -13,6 +13,12 @@
     border-color: rgba(73, 204, 249, 1.0);
     background-color: transparent;
   }
+
+  .btn-primary:hover {
+    color: rgb(255, 255, 255);
+    border-color: rgba(73, 204, 249, 1.0);
+    background-color: rgba(73, 204, 249, 1.0);
+  }
   
   input {
     width: 80%;
