@@ -20,6 +20,7 @@ class App extends Component {
 
     this.addTodo = this.addTodo.bind(this);
     this.removeTodo = this.removeTodo.bind(this);
+
     this.finishedTodo = this.finishedTodo.bind(this);
   }
 
