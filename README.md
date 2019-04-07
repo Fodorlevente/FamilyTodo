@@ -30,7 +30,6 @@ Developers:
 The app uses a number of open source projects to work properly:
 
 * [React.JS] - HTML enhanced for web apps!
-* [Twitter Bootstrap] - great UI boilerplate for modern web apps
 * [node.js] - evented I/O for the backend
 * [Express] - fast node.js network app framework [@tjholowaychuk]
 
