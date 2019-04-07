@@ -16,3 +16,11 @@ it('Main page status', function(done) {
         done();
     });
 });
+
+
+it('Data from backend', function(done) {
+    request('http://localhost:3000/express_backend', function(error, response, body) {
+        expect(typeof(response)).to.equal("object");
+        done();
+    });
+});
