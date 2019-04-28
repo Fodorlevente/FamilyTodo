@@ -5,7 +5,9 @@ export default class TodoInput extends React.Component{
     constructor(props){
         super(props)
 
-        // setState triggers the re-render
+        /**
+         * setState triggers the re-render
+         *  */ 
         this.state = {value: this.props.todoText};
 
         this.handleChange = this.handleChange.bind(this);

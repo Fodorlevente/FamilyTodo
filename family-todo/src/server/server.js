@@ -5,7 +5,7 @@ const MongoClient = require('mongodb').MongoClient
 var anyad=[1,1,2]
 console.log(typeof(anyad))
 
-// TODO: create a single module from this
+
 MongoClient.connect('mongodb://localhost:27017/todo', function (err, client) {
   if (err) throw err
 
@@ -17,12 +17,17 @@ MongoClient.connect('mongodb://localhost:27017/todo', function (err, client) {
   })
 })
 
-// console.log that your server is up and running
+/**
+ * console.log that your server is up and running
+ * @param {jsonObj} jsonObj  -Data from DB
+ */
 function serverConnection(jsonObj){
    
     app.listen(port, () => console.log(`Listening on port ${port}`));
 
-    // create a GET route
+    /**
+     * create a GET route
+     *  */ 
     app.get('/express_backend', (req, res) => {
       res.send({ express : jsonObj[0]});
     });

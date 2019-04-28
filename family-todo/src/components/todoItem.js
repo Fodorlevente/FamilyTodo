@@ -6,7 +6,10 @@ export default class TodoItem extends React.Component{
         super(props);
     }
 
-    // call removeTodo from App.js
+    /**
+     * call removeTodo from App.js
+     * @param {id} id - ToDo task Id
+     */
     removeTodo(id){
         this.props.removeTodo(id);
     }
