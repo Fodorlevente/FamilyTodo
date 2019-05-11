@@ -6,8 +6,8 @@ node {
         stage('Install dependencies'){
             bat 'npm install'
         }
-        stage('test'){
-            bat 'npm test'
+        stage('Test functionality with mocha'){
+            bat 'mocha src/test/backend.js'
         }
     }
 }
