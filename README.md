@@ -50,6 +50,11 @@ $ cd ..
 $ npm run dev
 ```
 
+### CI Infrastructure:
+Codefresh and Jenkins in local
+User Interface :
+![Image of UI](./img/ci.JPG)
+
 License
 ----
 
