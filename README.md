@@ -1,18 +1,18 @@
 # Family Todo 
 
-User Interface plan:
-![Image of UI](./img/UI.png)
+User Interface :
+![Image of UI](./img/application.JPG)
 
 
 Family todo web-based fullstack application written in JavaScript. The Frontend was built in React.js and Bootstrap for the responsive and clean design for increase the user experience. The Server is a Node.js server, written in JavaScritpt, and uses express.js. To store datas, this application use MongoDB, which one is a NoSql database. Our plan is create multiple docker images for every services like frontend, backend, and the database. At the UI the user can see multiple cards or tasks, which contains the title, description and the place or time of things to do. There are multiple card colors (red, grey, blue, yellow).
 
-| Color | Description |
-| ------ | ------ |
-| Grey | Can be done at any time |
-| Green | Low level task |
-| Blue | Higher than low level and less difficult than medium level |
-| Yellow | Medium level task |
-| Red | Very important task |
+| Actions |
+| ------ | 
+| Add task to list |
+| Update selected task |
+| Delete selected task |
+| Print list of tasks |
+
 
 Infrastructure plan:
 ![Image of Infrastructure](./img/Infrastructure.png)
@@ -31,7 +31,7 @@ The app uses a number of open source projects to work properly:
 
 * [React.JS] - HTML enhanced for web apps!
 * [node.js] - evented I/O for the backend
-* [Express] - fast node.js network app framework [@tjholowaychuk]
+* [Express] - fast node.js network app framework
 
 
 
@@ -42,14 +42,13 @@ App requires [Node.js](https://nodejs.org/) latest to run.
 Install the dependencies and devDependencies and start the server.
 
 ```sh
-$ cd familyTODO
-$ npm install -d
+$ cd release
+$ npm install
+$ cd client
+$ npm install
+$ cd ..
+$ npm run dev
 ```
-
-### Todos
-
- - Write MORE Tests
- - Add multiply family use
 
 License
 ----
